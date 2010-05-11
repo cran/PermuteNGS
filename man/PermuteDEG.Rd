@@ -9,7 +9,8 @@
   \item{samplingNumber}{ sampling Number from pooled set}
   \item{alternative}{ one-tail analysis : alternative= "one.sided", two-tail analysis : alternative="two.sided" }
 }
-\details{If necessary more details than the description above, see the manual or manuscprit, please. }
+\details{If necessary more details than the description above, see the manual in 
+http://snugenome.snu.ac.kr/Software/PermuteNGS/ , please. }
 \references{ 
   Taeheon Lee and BO-Young Lee, et al (2010), PermuteNGS: The significance testing of transcriptome profiling for RNA-sequencing data 
 
