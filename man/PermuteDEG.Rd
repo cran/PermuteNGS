@@ -7,7 +7,7 @@
   \item{dataA}{ One of Input data, file format is raw read count as gene}
   \item{dataB}{Other Input data, file format is raw read count as gene}
   \item{samplingNumber}{ sampling Number from pooled set}
-  \item{alternative}{ one-tail analysis : alternative= "one.sided", two-tail analysis : alternative="two.sided" }
+  \item{alternative}{ one-tailed analysis : alternative= "one.tailed", two-tailed analysis : alternative="two.tailed" }
 }
 \details{If necessary more details than the description above, see the manual in 
 http://snugenome.snu.ac.kr/Software/PermuteNGS/ , please. }
@@ -24,7 +24,7 @@ http://snugenome.snu.ac.kr/Software/PermuteNGS/ , please. }
 library(PermuteNGS)
 data(Sample250)
 attach(Sample250)
-result <- PermuteDEG(R1L1Kidney, R1L2Liver, 1000, alternative = "two.sided")
+result <- PermuteDEG(R1L1Kidney, R1L2Liver, 1000, alternative = "two.tailed")
 rownames(result)= rownames(data)
 write.csv(result, "PermuteNGS.result.csv")
 }
